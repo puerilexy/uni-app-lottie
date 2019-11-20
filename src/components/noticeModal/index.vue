@@ -2,7 +2,7 @@
   <view class="notice-modal" :style="{display: closeFlag ? 'block' : 'none'}">
     <view :class="[coinarea, isShow? 'modal-show' : '']">
       <view class="coin">
-          12314234
+          <image class="banner-bg" src="/static/pic-icourt-to-japan-cover.png" />
       </view>
       <view class="lottie-wrap" style="width: 100%; height: 100%; position: absolute; z-index: 888">
           <lottie-miniapp width="500" height="1000"></lottie-miniapp>
@@ -50,7 +50,7 @@ export default {
         right: 0;
         bottom: 0;
         left: 0;
-        background: rgba(0, 0, 0, .5);
+        background: rgba(255, 255, 125, .1);
         z-index: 999;
     }
     .coinarea{
@@ -71,6 +71,11 @@ export default {
         transform: rotate(-30deg);
         transition: all .5s cubic-bezier(.17,.89,.32,1.27);
         overflow: visible;
+    }
+
+    .banner-bg {
+      width: 100%;
+      height: 100%;
     }
   
     .d-coin {
